@@ -1,0 +1,90 @@
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top, #ade6e1, #dffaf5);
+  overflow-x: hidden;
+}
+
+.game-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2em;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.tree {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.branch {
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #FFDE59;
+  transition: transform 0.2s;
+}
+
+.branch:hover {
+  transform: scale(1.1);
+}
+
+.info-box {
+  margin-top: 20px;
+  border: 2px solid #4CAF50;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #ffffffcc;
+}
+
+.info-box.hidden {
+  display: none;
+}
+
+#treeImage {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.start-btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.leaf {
+  position: absolute;
+  font-size: 1.5rem;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  0% { top: -10%; }
+  100% { top: 100%; transform: rotate(360deg); }
+}
+ 
+ 
+
+ 

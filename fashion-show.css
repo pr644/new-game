@@ -1,0 +1,134 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffe0f0, #fff0ff);
+    margin: 0;
+    padding: 20px;
+}
+
+.game-header h1 {
+    font-size: 2.5rem;
+    color: #ff6f91;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-15px); 
+    }
+}
+
+.game-container {
+    margin-top: 20px;
+}
+
+.avatar-selection button, .wardrobe button {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    background: #ffcc70;
+    box-shadow: 0 5px #c78f2a;
+    transition: transform 0.2s;
+}
+
+.avatar-selection button:hover, .wardrobe button:hover {
+    transform: scale(1.1);
+}
+
+.runway-stage {
+    width: 80%;
+    height: 180px;
+    margin: 20px auto;
+    border: 3px dashed #ff6f91;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #fff0f0, #ffe0e0);
+    box-shadow: 0 0 20px #ff6f91;
+}
+
+.runway-avatar {
+    position: absolute;
+    bottom: 0;
+    font-size: 60px;
+    transition: left 2s linear;
+    text-shadow: 1px 1px 5px #ffccff;
+}
+
+.audience {
+    margin-top: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.back-btn, #start-show-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: #ff6f91;
+    color: white;
+    box-shadow: 0 5px #c71f1f;
+}
+
+#start-show-btn {
+    margin-top: 10px;
+}
+
+
+.sparkle {
+    position: absolute;
+    font-size: 20px;
+    animation: sparkleAnim 1s linear infinite;
+    pointer-events: none;
+    z-index: 10;
+}
+
+@keyframes sparkleAnim {
+    0% { 
+        transform: translateY(0) rotate(0deg); 
+        opacity: 1;
+     }
+    50% { 
+        transform: translateY(-10px) rotate(180deg); 
+        opacity: 0.7; 
+    }
+    100% { 
+        transform: translateY(0) rotate(360deg); 
+        opacity: 0; 
+   }
+}
+
+
+.stage-light {
+    position: absolute;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fff, rgba(255,255,255,0));
+    animation: lightMove 2s linear infinite alternate;
+    opacity: 0.7;
+}
+
+@keyframes lightMove {
+    0% { 
+    left: 0; 
+    }
+    50% { 
+    left: 70%; 
+    }
+    100% { 
+    left: 100%; 
+    }
+}

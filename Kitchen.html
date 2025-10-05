@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍳 Magic Kitchen Adventure 🍲</title>
+  <link rel="stylesheet" href="Kitchen.css">
+  <link rel="icon" href="https://images.stockcake.com/public/5/b/e/5be0a21b-0b3c-40d3-9549-d20793cb4550_large/magical-kitchen-adventure-stockcake.jpg">
+</head>
+<body>
+
+  
+  <div id="startScreen" class="start-screen">
+    <h1>🍳 Welcome to Magic Kitchen Adventure 🍲</h1>
+    <p>Get ready to cook, learn, and have fun!</p>
+    <button id="startGameBtn" class="start-btn">👩‍🍳 Start Cooking</button>
+  </div>
+
+  
+  <div class="game-container hidden" id="gameContainer">
+    <h1>🍳 Magic Kitchen Adventure 🍲</h1>
+    <button onclick="goBack()" class="back-btn">⬅ Back to Main Menu</button>
+    <p class="subtitle">Drag the items to the correct kitchen spot!</p>
+
+    <div class="kitchen">
+      <div class="item" draggable="true" data-item="pot">🍲 Pot</div>
+      <div class="item" draggable="true" data-item="pan">🍳 Pan</div>
+      <div class="item" draggable="true" data-item="knife">🔪 Knife</div>
+      <div class="item" draggable="true" data-item="spoon">🥄 Spoon</div>
+      <div class="item" draggable="true" data-item="plate">🍽 Plate</div>
+    </div>
+
+    <div class="zones">
+      <div class="zone" data-place="stove">🔥 Stove</div>
+      <div class="zone" data-place="counter">🧑‍🍳 Counter</div>
+      <div class="zone" data-place="drawer">🗄 Drawer</div>
+      <div class="zone" data-place="sink">🚰 Sink</div>
+      <div class="zone" data-place="cabinet">🗄 Cabinet</div>
+    </div>
+
+    <p id="score">Score: 0</p>
+    <p id="message"></p>
+
+    <div id="celebration" class="hidden">
+      🎉 Congratulations! You completed the kitchen! 🎉<br><br>
+      <button id="playAgainBtn" class="play-again">🔁 Play Again</button>
+    </div>
+  </div>
+
+  
+  <audio id="successSound" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg"></audio>
+  <audio id="failSound" src="https://actions.google.com/sounds/v1/cartoon/cartoon_boing.ogg"></audio>
+  <audio id="coinSound" src="https://actions.google.com/sounds/v1/cartoon/coin_drop.ogg"></audio>
+
+  <script src="Kitchen.js"></script>
+</body>
+</html>

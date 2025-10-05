@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🐾 Level 6: Animal Safari Hunt</title>
+    <link rel="stylesheet" href="animal.css">
+    <link rel="icon" href="https://img.freepik.com/premium-vector/safari-hunting-african-animals-hunt-jungle_8071-40984.jpg">
+</head>
+<body>
+    <header class="topbar">
+        <h1>🐾 Animal Safari Hunt</h1>
+        <div class="coins">💰 Coins: <span id="coinCount">0</span></div>
+         <a href="index.html" class="back-btn">⬅ Back</a>
+    </header>
+    <main>
+        <section class="jungle">
+            <div class="sky"></div>
+            <div class="ground"></div>
+
+
+            <div class="hud">
+                <div class="target">
+                Find: <span id="targetName">—</span>
+                </div>
+                <div class="round">
+                Round <span id="roundNow">1</span>/<span id="roundTotal">5</span>
+                </div>
+            </div>
+
+            <div class="bushes" id="bushRow">
+               
+            </div>
+
+            <div class="reveal" id="revealCard" aria-live="polite">
+                <div class="animal-emoji" id="revealEmoji">🐾</div>
+        <div class="animal-name" id="revealLabel">—</div>
+        <button id="nextBtn" class="primary">Next ▶</button>
+            </div>
+        </section>
+
+        <section class="controls">
+      <button id="hintBtn">💡 Hint</button>
+      <button id="shuffleBtn">🔀 Shuffle</button>
+      <button id="restartBtn">🔁 Restart</button>
+       <button id="playAnimalSound">🔊 Play Sound</button>
+    </section>
+    </main>
+    <footer class="footer">
+    Tip: Tap a bush to peek! Earn +5 coins when you find the right animal. Bonus +10 for finishing the safari.
+  </footer>
+
+  <audio id="sfxCoin" preload="auto"></audio>
+    <script src="animal.js"></script>
+</body>
+</html>

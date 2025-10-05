@@ -1,0 +1,98 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: linear-gradient(#ffefd5, #ffe4b5);
+  text-align: center;
+  padding: 20px;
+}
+
+header { 
+  margin-bottom: 20px; 
+}
+
+.hud {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.kitchen {
+  position: relative;
+  display: inline-block;
+  background: #fff8dc;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.bowl {
+  width: 250px;
+  height: 150px;
+  margin: 20px auto;
+  background: #ffdab9;
+  border-radius: 0 0 120px 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ingredient {
+  font-size: 30px;
+  margin: 10px;
+  cursor: grab;
+  display: inline-block;
+}
+
+button {
+  font-size: 20px;
+  margin: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #ffa500;
+  color: white;
+  transition: 0.2s;
+}
+button:hover { background: #ff7f50; }
+
+.rewardMsg {
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.hidden { 
+  display: none; 
+}
+
+
+.stirring { 
+  animation: spin 1s linear infinite; 
+}
+.baking { 
+  animation: glow 1s alternate infinite; 
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+@keyframes glow {
+  from { 
+    box-shadow: 0 0 10px orange; 
+  }
+  to { 
+    box-shadow: 0 0 30px red; 
+  }
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}

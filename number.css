@@ -1,0 +1,67 @@
+body{
+  font-family: 'Comic Sans MS', sans-serif;
+  background-image: url("https://tse2.mm.bing.net/th/id/OIP.1ABmiTFB1Dg-S5eWIER9UgHaDX?pid=Api&P=0&h=180");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #333;
+}
+.number-container{
+  margin-top: 50px;
+}
+.card{
+  background-color: #fff9e6;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  display: inline-block;
+}
+.card img{
+  width: 150px;
+  height: auto;
+}
+.navigation button{
+  margin: 10px;
+ padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #8ed1fc;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#progress {
+  margin-top: 15px;
+}
+#finish-message{
+  text-align: center;
+  padding: 50px;
+  background-color: #fff8dc;
+   border: 4px dashed #ff69b4;
+   border-radius: 20px;
+    margin: 50px auto;
+    width: 80%;
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
+    animation: popIn 0.6s ease-out;
+}
+#finish-message h2{
+  font-size: 3rem;
+  color: #ff1493;
+}
+#finish-message p{
+  font-size: 1.5rem;
+  color: #4b0082;
+}
+@keyframes popIn{
+  0%{
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}

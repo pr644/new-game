@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 17: Time Travel Adventure ⏳🕰️</title>
+  <link rel="stylesheet" href="time-travel.css">
+  <link rel="icon" href="https://dthezntil550i.cloudfront.net/b5/latest/b52308291216489790015974889/1280_960/ad66d773-a34d-4ba6-82b9-85b0c40a5d77.png">
+</head>
+<body>
+  <header>
+    <h1>⏳ Time Travel Adventure</h1>
+    <div class="hud">
+      <div>Time Gems: <span id="gems">0</span> 🌟</div>
+      <div>Missions: <span id="missions">0</span> 🏆</div>
+    </div>
+  </header>
+
+  <main>
+    
+    <div class="scene" id="egypt">
+      <h2>🏺 Ancient Egypt</h2>
+      <p>Match the hieroglyphs to unlock the pyramid gem!</p>
+      <div class="puzzle">
+        <img src="http://wallpapercave.com/wp/tnrmtCi.jpg" class="symbol" data-match="1">
+        <img src="https://www.worldatlas.com/upload/60/8a/c7/shutterstock-1406550839.jpg" class="symbol" data-match="2">
+        <img src="https://thumbs.dreamstime.com/b/ancient-egyptian-scene-9119179.jpg?w=768" class="symbol" data-match="3">
+      </div>
+      <div class="targets">
+        <div class="target" data-match="1"></div>
+        <div class="target" data-match="2"></div>
+        <div class="target" data-match="3"></div>
+      </div>
+      <div class="rewardMsg hidden"></div>
+    </div>
+
+    <div class="scene hidden" id="medieval">
+      <h2>🏰 Medieval Europe</h2>
+      <p>Help the knight wear the correct armor!</p>
+      <div class="puzzle">
+        <img src="https://brewminate.com/wp-content/uploads/2019/03/031819-78-History-Medieval-Middle-Ages-Europe-Trade-Commerce-1024x735.jpeg" class="symbol" data-match="helmet">
+        <img src="https://yalebooksnetwork.org/yupblog/wp-content/uploads/sites/4/2016/08/9780300208344.jpg" class="symbol" data-match="shield">
+        <img src="https://kottke.org/plus/misc/images/medieval-europe-wickham.jpg" class="symbol" data-match="sword">
+      </div>
+      <div class="targets">
+        <div class="target" data-match="helmet"></div>
+        <div class="target" data-match="shield"></div>
+        <div class="target" data-match="sword"></div>
+      </div>
+      <div class="rewardMsg hidden"></div>
+    </div>
+
+    <div class="scene hidden" id="future">
+      <h2>🤖 Future City</h2>
+      <p>Repair the robot by matching the wires!</p>
+      <div class="puzzle">
+        <div class="symbol" data-match="red" style="background:red;"></div>
+        <div class="symbol" data-match="blue" style="background:blue;"></div>
+        <div class="symbol" data-match="green" style="background:green;"></div>
+      </div>
+      <div class="targets">
+        <div class="target" data-match="red"></div>
+        <div class="target" data-match="blue"></div>
+        <div class="target" data-match="green"></div>
+      </div>
+      <div class="rewardMsg hidden"></div>
+    </div>
+
+   
+    <div id="controls">
+      <button id="prevScene">⬅️ Prev</button>
+      <button id="nextScene">Next ➡️</button>
+    </div>
+  </main>
+   <button class="back-btn" onclick="goToLobby()">🏠 Back to Lobby</button>
+
+  <script src="time-travel.js"></script>
+</body>
+</html>

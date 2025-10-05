@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌳 Magical Tree Adventure 🌳</title>
+  <link rel="stylesheet" href="Tree.css">
+  <link rel="icon" href="https://www.emoji.co.uk/files/phantom-open-emojis/animals-nature-phantom/12470-deciduous-tree.png">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🌈 Magical Tree Adventure 🌈</h1>
+    <p class="subtitle">Click a tree to discover magic!</p>
+
+    <button id="startBtn" class="start-btn">Start Game</button>
+
+    <div class="tree">
+      <button class="branch" data-tree="mango">🥭 Mango</button>
+      <button class="branch" data-tree="apple">🍎 Apple</button>
+      <button class="branch" data-tree="coconut">🥥 Coconut</button>
+      <button class="branch" data-tree="pine">🌲 Pine</button>
+      <button class="branch" data-tree="banyan">🌳 Banyan</button>
+    </div>
+
+    <div id="infoBox" class="info-box hidden">
+      <img id="treeImage" alt="Tree" />
+      <h2 id="treeName"></h2>
+      <p id="feedback"></p>
+      <p id="score">Score: 0</p>
+    </div>
+  </div>
+
+  <div class="leaves"></div>
+
+
+
+
+ 
+  <audio id="bgMusic" src="https://cdn.pixabay.com/download/audio/2021/08/08/audio_2a72a4b123.mp3?filename=forest-ambience-6677.mp3" loop></audio>
+  <audio id="crowd" src="https://cdn.pixabay.com/download/audio/2021/09/02/audio_849b62f0b3.mp3?filename=birds-chirping-ambient-nature-sounds-8012.mp3"></audio>
+  <audio id="whistle" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5c0c6e3881.mp3?filename=small-bell-ding-112193.mp3"></audio>
+
+  <script src="Tree.js"></script>
+</body>
+</html>
+ 
+
+ 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coloring Fun Game</title>
+  <link rel="stylesheet" href="coloring.css">
+  <link rel="stylesheet" href="https://emojisup.org/images/emoji/facebook/15-0/artist-palette.png">
+</head>
+<body>
+  <header>
+    <h1>🎨 Coloring Fun Game</h1>
+    <div id="coin-display">💰 Coins: <span id="coin-count">0</span></div>
+  </header>
+
+  <main>
+    
+    <div id="canvas-container">
+      
+      <svg id="cat" class="scene active" viewBox="0 0 200 200">
+        <circle cx="100" cy="60" r="40" stroke="black" fill="white"/>
+        <circle cx="80" cy="50" r="5" fill="black"/>
+        <circle cx="120" cy="50" r="5" fill="black"/>
+        <polygon points="60,30 70,10 80,30" fill="white" stroke="black"/>
+        <polygon points="120,30 130,10 140,30" fill="white" stroke="black"/>
+      </svg>
+
+      
+      <svg id="car" class="scene" viewBox="0 0 200 200">
+        <rect x="40" y="100" width="120" height="40" stroke="black" fill="white"/>
+        <rect x="60" y="80" width="80" height="30" stroke="black" fill="white"/>
+        <circle cx="60" cy="145" r="15" fill="black"/>
+        <circle cx="140" cy="145" r="15" fill="black"/>
+      </svg>
+
+      
+      <svg id="flower" class="scene locked" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="20" fill="yellow"/>
+        <circle cx="100" cy="60" r="20" fill="pink"/>
+        <circle cx="100" cy="140" r="20" fill="pink"/>
+        <circle cx="60" cy="100" r="20" fill="pink"/>
+        <circle cx="140" cy="100" r="20" fill="pink"/>
+      </svg>
+    </div>
+
+   
+    <div id="palette">
+      <button class="color-swatch" data-color="red" style="background:red;"></button>
+      <button class="color-swatch" data-color="blue" style="background:blue;"></button>
+      <button class="color-swatch" data-color="green" style="background:green;"></button>
+      <button class="color-swatch" data-color="yellow" style="background:yellow;"></button>
+      <button id="random-btn">🎲 Random</button>
+      <button id="eraser-btn">🧽 Eraser</button>
+    </div>
+
+    
+    <div id="controls">
+      <button id="prev-btn">⬅ Prev</button>
+      <button id="next-btn">Next ➡</button>
+      <button id="reset-btn">🔄 Reset</button>
+    </div>
+  </main>
+
+  <button onclick="location.reload()">🔁 Try Again</button>
+      <a href="index.html"><button>🏠 Back to Lobby</button></a>
+
+  
+  <audio id="coin-sound" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg"></audio>
+
+  <script src="coloring.js"></script>
+</body>
+</html>

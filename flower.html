@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌸 Level 8 Pro — Flower Treasure Hunt</title>
+  <link rel="stylesheet" href="flower.css">
+  <link rel="icon" href="https://emojis.wiki/thumbs/emojis/cherry-blossom.webp">
+</head>
+<body>
+  <header class="topbar">
+    <h1>🌸 Level 8 Pro — Flower Treasure Hunt</h1>
+    <div class="right">
+      <div class="coins">💰 Coins: <span id="coins">0</span></div>
+      <label class="hard">
+        <input type="checkbox" id="hardMode"> Hard Mode (traps)
+      </label>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="info">
+      <div>Round <b id="roundNow">1</b>/<b id="roundTotal">5</b></div>
+      <div id="timer">⏱ <span id="timeLeft">12</span>s</div>
+      <div id="score">Score: <span>0</span></div>
+    </section>
+
+    <section class="clue-area">
+      <div id="clue">Clue: —</div>
+    </section> 
+
+    <section id="garden" class="garden"></section> 
+
+    <section class="controls">
+      <button id="startBtn" class="primary">▶ Start Round</button>
+      <button id="shuffleBtn">🔀 Shuffle</button>
+      <button id="skipBtn">⏭ Skip (No Reward)</button>
+    </section>
+
+    <section id="reveal" class="reveal">
+      <div id="revealEmoji" class="emoji">🦋</div>
+      <div id="revealName" class="name">—</div>
+      <div id="revealMsg" class="msg"></div>
+      <button id="nextBtn" class="primary">Next</button>
+    </section>
+
+    <section id="summary" class="summary hidden">
+      <h2>🏁 Safari Summary</h2>
+      <p>Score: <span id="finalScore">0</span> / <span id="finalTotal">5</span></p>
+      <p>Gained Coins: <span id="gainedCoins">0</span></p>
+      <button id="playAgain" class="primary">Play Again</button>
+    </section>
+  </main>
+
+  <footer class="hint">
+    Hint: use the clue to avoid traps. Correct = +10 coins; Wrong = −2 coins.
+  </footer>
+
+  <script src="flower.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart KidZ World 🎓</title>
+
+  <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/animated-emoji/1f393.gif">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="logo-container">
+    <div class="logo-circle">
+      <img src="https://img.freepik.com/premium-vector/back-school-badge-group-students-cartoon-character-illustration_24640-70968.jpg" alt="Kid Image">
+    </div>
+    <div class="logo">
+      <h1>🎓 Smart KidZ World</h1>
+      <p>Learn · Play · Grow</p>
+    </div>
+  </div>
+
+  <audio id="bg-music" src="assets/audio/happy-kids.mp3" loop preload="auto"></audio>
+  <button id="music-btn" onclick="toggleMusic()">🔊</button>
+
+ 
+  <div class="buttons" id="login-screen">
+    <button class="login-btn google" onclick="login('google')">
+      <img src="https://developers.google.com/static/identity/images/branding_guide_do_1.png" alt="Google Logo" />
+      Login with Google
+    </button>
+    <button class="login-btn facebook" onclick="login('facebook')">
+      <img src="https://static.vecteezy.com/system/resources/previews/022/498/451/non_2x/3d-render-facebook-logo-icon-with-new-notification-isolated-on-transparent-background-free-png.png" alt="Facebook Logo" />
+      Login with Facebook
+    </button>
+    <button class="login-btn guest" onclick="login('guest')">
+      <img src="https://img.favpng.com/8/7/18/avatar-child-computer-icons-user-profile-png-favpng-MzLAeL5t4QkeLit56jc7DdPUC.jpg" alt="Guest Logo" />
+      Play as Guest
+    </button>
+  </div>
+
+  
+  <div id="user-info" class="hidden">
+    <img id="user-pic" src="" alt="Profile Picture" />
+    <p id="user-name"></p>
+    <button onclick="startGame()">▶️ Start Game</button>
+    <button onclick="signOut()">🚪 Sign Out</button>
+  </div>
+
+  
+  <div id="lobby" class="hidden">
+    <h2>🎉 Welcome to the Smart Kidz Lobby</h2>
+    <div class="lobby-menu">
+      <button onclick="openStore()">🏪 Store</button>
+      <button onclick="openSpanRole()">🎭 Span Role</button>
+      <button onclick="openFashionShow()">👗 Fashion Show</button>
+      <button onclick="openTournament()">🏆 Tournament</button>
+      <button onclick="window.location.href='index.html'">🔙 Back</button>
+    </div>
+    <div class="account-info">
+      <p>👤 User: <span id="lobby-username"></span></p>
+      <p>💰 Coins: <span id="coin-count">100</span></p>
+    </div>
+    <button onclick="goToLevels()">🚀 Go To Levels</button>
+  </div> 
+
+  
+  <div id="level-screen" class="hidden">
+    <h2>🚀 Choose Your Level</h2>
+    <p>💰 Coins: <span id="coin-count">100</span></p>
+    <div class="levels-container" id="levels-container"></div>
+    <button onclick="levelCompleted()">✅ Complete Level</button>
+    <button onclick="backToLobby()">🔙 Back to Lobby</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

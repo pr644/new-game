@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to top right, #fff8dc, #fff0b3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.start-screen {
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.start-screen h1 {
+  font-size: 2rem;
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+
+.start-screen p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.start-btn {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s;
+}
+
+.start-btn:hover {
+  background: #ffb84d;
+  transform: scale(1.05);
+}
+
+
+.game-container {
+  width: 95%;
+  max-width: 800px;
+  text-align: center;
+  animation: fadeInUp 1s ease-in;
+}
+
+.back-btn {
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #ffb84d;
+  border: none;
+}
+
+.kitchen, .zones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.item, .zone {
+  padding: 12px;
+  border-radius: 12px;
+  background: #fff3b0;
+  min-width: 100px;
+  font-size: 1.2rem;
+  cursor: grab;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.item:active {
+  transform: scale(1.1);
+}
+
+.zone.correct {
+  background: #b2fab4;
+  box-shadow: 0 0 15px #4ade80;
+}
+
+
+.play-again {
+  background-color: #4ade80;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.play-again:hover {
+  background-color: #22c55e;
+  transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hidden {
+  display: none;
+}

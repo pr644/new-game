@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 18: Cosmic Explorer Adventure 🛸</title>
+  <link rel="stylesheet" href="space-rescue.css">
+  <link rel="icon" href="https://i.pinimg.com/originals/7a/d8/3a/7ad83a2b5db3d535e53021fce18d2c03.png">
+</head>
+<body>
+  <header>
+    <h1>🛸 Cosmic Explorer Adventure</h1>
+    <div class="hud">
+      <div>Cosmic Gems: <span id="gems">0</span> 🌟</div>
+      <div>Missions: <span id="missions">0</span> 🏆</div>
+    </div>
+  </header>
+
+  <main>
+    
+    <div class="scene" id="asteroidGarden">
+      <h2>🌑 Asteroid Garden</h2>
+      <p>Swipe your astronaut to collect cosmic orbs!</p>
+      <div class="astronaut" id="astro1"></div>
+      <div class="orb" style="top: 50px; left: 100px;"></div>
+      <div class="orb" style="top: 150px; left: 250px;"></div>
+      <div class="orb" style="top: 200px; left: 400px;"></div>
+      <div class="rewardMsg hidden"></div>
+    </div>
+
+    
+    <div class="scene hidden" id="alienSettlement">
+      <h2>👽 Alien Settlement</h2>
+      <p>Help aliens connect the floating symbols in order!</p>
+      <div class="symbol" data-order="1" style="top: 80px; left: 100px;">⭐</div>
+      <div class="symbol" data-order="2" style="top: 150px; left: 200px;">🌟</div>
+      <div class="symbol" data-order="3" style="top: 220px; left: 300px;">✨</div>
+      <div class="rewardMsg hidden"></div>
+    </div>
+
+    
+    <div id="controls">
+      <button id="prevScene">⬅️ Prev</button>
+      <button id="nextScene">Next ➡️</button>
+    </div>
+  </main>
+   <button class="back-btn" onclick="goToLobby()">🏠 Back to Lobby</button>
+
+  <script src="space-rescue.js"></script>
+</body>
+</html>

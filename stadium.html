@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎮 Level 9: Stadium of Legends</title>
+  <link rel="stylesheet" href="stadium.css">
+  <link rel="icon" href="https://emojigraph.org/media/facebook/video-game_1f3ae.png">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🎮 Level 9: Stadium of Legends</h1>
+    <p id="instruction">Press Start to begin your sports challenge!</p>
+    
+    <div id="status">
+      <span id="round">Round: 0 / 10</span>
+      <span id="score">Score: 0</span>
+      <span id="timer">⏱️ 10</span>
+    </div>
+
+    <div id="sportsZone" class="sports-zone"></div>
+
+    <button id="startBtn">▶️ Start Game</button>
+    <audio id="crowd" loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+<audio id="whistle">
+  <source src="https://actions.google.com/sounds/v1/sports/football_whistle.ogg" type="audio/ogg">
+  <source src="https://actions.google.com/sounds/v1/sports/football_whistle.mp3" type="audio/mpeg">
+</audio>
+<button onclick="playStadium()">Play Stadium Sounds</button>
+<button onclick="stopStadium()">Stop Stadium Sounds</button>
+  </div>
+  <script src="stadium.js"></script>
+</body>
+</html>
+

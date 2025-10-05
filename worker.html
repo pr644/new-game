@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>👷‍♂️ Worker World Adventure 🔥</title>
+<link rel="stylesheet" href="WorkerWorld.css">
+<link rel="icon" href="https://i.pinimg.com/originals/84/22/28/842228200bc85ac5906b10e1159da75a.png">
+</head>
+<body>
+<div class="game-container">
+  <h1>👷‍♂️ Worker World Adventure 🔥</h1>
+  <p class="subtitle">Complete each worker's mini-game to earn coins!</p>
+
+  <div class="city">
+    <div class="worker" data-worker="chef">
+      <img src="https://cdn.akamai.steamstatic.com/steam/apps/1612810/ss_fadf1f431bba173223523a982a21a9fcbf4e3912.1920x1080.jpg?t=1658480716" alt="Chef">
+      <div class="task">🍳</div>
+    </div>
+    <div class="worker" data-worker="gardener">
+      <img src="https://image.winudf.com/v2/image1/Y29tLmJ1YmFkdS5nYXJkZW5raWRzX3NjcmVlbl83XzE1NTA0OTA5MjNfMDY1/screen-7.jpg?fakeurl=1&type=.jpg" alt="gardener">
+      <div class="task">💧</div>
+    </div>
+    <div class="worker" data-worker="builder">
+      <img src="https://games.lol/wp-content/uploads/2021/04/builder-game-download-PC.jpg" alt="Builder">
+      <div class="task">🔨</div>
+    </div>
+    <div class="worker" data-worker="firefighter">
+      <img src="https://i.ytimg.com/vi/_0suwHUCmvU/maxresdefault.jpg" alt="Firefighter">
+      <div class="task">🚒</div>
+    </div>
+  </div>
+
+  <div class="tools">
+    <div class="tool" draggable="true" data-tool="pan">🍳</div>
+    <div class="tool" draggable="true" data-tool="watering_can">💧</div>
+    <div class="tool" draggable="true" data-tool="hammer">🔨</div>
+    <div class="tool" draggable="true" data-tool="hose">🚒</div>
+  </div>
+
+  <div id="infoBox">
+    <p id="message">Drag the correct tool to the worker!</p>
+    <p id="score">Score: 0</p>
+    <div id="progressBarContainer">
+      <div id="progressBar"></div>
+    </div>
+  </div>
+
+  <div id="confetti"></div>
+</div>
+
+
+<audio id="successSound" src="https://actions.google.com/sounds/v1/crowds/applause.ogg"></audio>
+<audio id="errorSound" src="https://actions.google.com/sounds/v1/cartoon/boing.ogg"></audio>
+<audio id="actionSound"></audio>
+<audio id="bgMusic" autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_f4203a20ac.mp3?filename=happy-background-112194.mp3" type="audio/mpeg">
+</audio>
+ <button class="back-btn" onclick="goToLobby()">🏠 Back to Lobby</button>
+
+<script src="WorkerWorld.js"></script>
+</body>
+</html>

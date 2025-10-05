@@ -1,0 +1,93 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to bottom, #ffe6cc, #ccf2ff);
+  transition: background 0.5s;
+}
+
+h1 {
+  color: #ff4081;
+}
+
+#castle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+  position: relative;
+  height: 450px;
+}
+
+.fruit {
+  font-size: 50px;
+  cursor: pointer;
+  position: relative;
+  animation: bounce 2s infinite ease-in-out;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fruit:hover {
+  box-shadow: 0 0 25px gold;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-130px) rotate(10deg); }
+  100% { transform: translateY(0); }
+}
+
+#baskets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.basket {
+  width: 130px;
+  height: 80px;
+  border: 2px dashed #555;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.basket.correct {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #ffd700;
+}
+
+.hidden {
+  display: none;
+}
+
+#reward .confetti {
+  font-size: 50px;
+  animation: confettiAnim 1s infinite alternate;
+  margin: 20px 0;
+}
+
+@keyframes confettiAnim {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(15deg); }
+  100% { transform: rotate(-15deg); }
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #ff9800;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}

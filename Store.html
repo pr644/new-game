@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidZ Store 🛍️</title>
+    <link rel="stylesheet" href="Store.css">
+    <link rel="icon" href="https://emojis.wiki/thumbs/emojis/shopping-bags.webp">
+</head>
+<body>
+    <div class="store-header">
+        <h1>🛍️ KidZ Store</h1>
+        <p>💰 Coins: <span id="store-coin-count">100</span></p>
+    </div>
+
+    <div class="store-categories">
+        <button class="category-btn" onclick="showCategory('avatar')">👕 Clothes</button>
+        <button class="category-btn" onclick="showCategory('toys')">🧸 Toys</button>
+        <button class="category-btn" onclick="showCategory('pets')">🐾 Pets</button>
+        <button class="category-btn" onclick="showCategory('powerups')">⚡ Power-Ups</button>
+    </div>
+
+    <div id="store-items" class="items-grid"></div>
+
+
+    <button class="back-btn" onclick="window.location.href='index.html'">🔙 Back to Lobby</button>
+
+    <script src="Store.js"></script>
+</body>
+</html>

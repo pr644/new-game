@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐦 Level 7: Bird Sound Match (Hard)</title>
+    <link rel="stylesheet" href="bird.css">
+    <link rel="stylesheet" href="https://em-content.zobj.net/social/emoji/bird.png">
+</head>
+<body>
+    <header class="topbar">
+        <h1>🐦 Bird Sound Match</h1>
+        <div class="coins">💰 Coins: <span id="coinCount">0</span></div>
+        <a href="index.html" class="back-btn">⬅ Back</a>
+    </header>
+    <main class="wrap">
+        <section class="panel">
+            <div class="row">
+                <div class="target">Find: <span id="targetName">—</span></div>
+                <div class="timer">⏱<span id="timeLeft">10.0</span>s</div>
+                <div class="round">
+                    Round  
+            Round <span id="roundNow">1</span>/<span id="roundTotal">10</span>
+            </div>
+            <div class="row controls">
+                <label class="mode">
+                     Mode:
+                     <select  id="modeSelect">
+                        <option value="easy">Easy (3)</option>
+                         <option value="normal" selected>Normal (4)</option>
+                         <option value="hard">Hard (6)</option>
+                     </select>
+                </label>
+                <button id="playSoundBtn">🔊 Play Sound</button>
+                <button id="shuffleBtn">🔀 Shuffle</button>
+                <button id="restartBtn">🔁 Restart</button>
+            </div>
+
+            <div id="grid" class="grid"></div>
+        </section>
+        <section id="result" class="result hidden">
+             <h2>🏁 Challenge Complete!</h2>
+             <p>Score: <b id="score">0</b> / <span id="maxScore">0</span></p>
+             <p>Best Streak: <b id="bestStreak">0</b></p>
+             <p>Bonus Coins: <b id="bonusCoins">0</b></p>
+             <button id="againBtn" class="primary">Play Again</button>
+
+        </section>
+    </main>
+
+    <footer class="hint">Tip: Correct = +5 coins, streak boosts time; wrong = -2s penalty.</footer>
+    <script src="bird.js"></script>
+    
+</body>
+</html>

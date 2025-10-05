@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🪲 Insect Symphony Garden 🐞</title>
+<link rel="stylesheet" href="Insects.css">
+<link rel="icon" href="https://as1.ftcdn.net/v2/jpg/08/30/07/20/1000_F_830072017_9ClA4NfKmQ4XmHQ0wBtEB0BFjCeH2YdM.jpg">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🪲 Insect Symphony Garden 🐞</h1>
+    <button onclick="goBack()" class="back-btn">⬅ Back to Main Menu</button>
+    <p class="subtitle">Click the insects to play music and learn fun facts!</p>
+    
+    <div class="garden">
+      <div class="flower" data-insect="ladybug">🌸</div>
+      <div class="flower" data-insect="butterfly">🌼</div>
+      <div class="flower" data-insect="bee">🌺</div>
+      <div class="flower" data-insect="ant">🌻</div>
+      <div class="flower" data-insect="dragonfly">🌷</div>
+      <div class="flower" data-insect="grasshopper">🌹</div>
+    </div>
+
+    <div id="infoBox" class="info-box hidden">
+      <h2 id="insectName"></h2>
+      <p id="insectFact"></p>
+      <p id="score">Score: 0</p>
+      <button onclick="backToGarden()">⬅ Back</button>
+    </div>
+  </div>
+
+  
+  <canvas id="confettiCanvas"></canvas>
+
+ 
+  <audio id="ladybugSound" src="https://actions.google.com/sounds/v1/animals/ladybug_buzz.ogg"></audio>
+  <audio id="butterflySound" src="https://actions.google.com/sounds/v1/animals/butterfly_flap.ogg"></audio>
+  <audio id="beeSound" src="https://actions.google.com/sounds/v1/animals/bee_buzz.ogg"></audio>
+  <audio id="antSound" src="https://actions.google.com/sounds/v1/animals/ant_walk.ogg"></audio>
+  <audio id="dragonflySound" src="https://actions.google.com/sounds/v1/animals/dragonfly.ogg"></audio>
+  <audio id="grasshopperSound" src="https://actions.google.com/sounds/v1/animals/grasshopper.ogg"></audio>
+
+  
+
+  <script src="Insects.js"></script>
+</body>
+</html>

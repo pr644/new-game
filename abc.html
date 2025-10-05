@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn ABC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://i.ytimg.com/vi/76_gZ3XCKbg/maxresdefault.jpg">
+</head>
+<body>
+  <div class="abc-container">
+    <h1>🅰️ Learn ABC</h1>
+
+    <div class="card">
+      <h2 id="letter">A</h2>
+      <img id="image" src="https://www.pngall.com/wp-content/uploads/2016/07/Apple-PNG.png" alt="A for Apple" />
+      <p id="word">Apple</p>
+
+      <button onclick="playSound()">🔊 Say it</button>
+
+
+    
+      <div class="navigation">
+        <button onclick="prevLetter()">⬅ Previous</button>
+        <button onclick="nextLetter()">Next ➡</button>
+        <button class="back-btn" onclick="goToLobby()">🏠 Back to Lobby</button>
+       
+        <div id="progress">
+          <progress id="progressBar" value="1" max="26"></progress>
+          <span id="progressText">1/26</span>
+        </div>
+         <div id="reward" style="display: none;">
+    🎉 Congratulations! You’ve completed the ABCs!
+    <br>🌟🌟🌟
+  </div>
+  <div id="quiz-popup" style="display:none; text-align:center; margin-top: 30px;">
+  <p>Are you ready to start the quiz?</p>
+  <button onclick="goToQuiz()">👉 Start Quiz</button>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="letter-sound" src="https://ssl.gstatic.com/dictionary/static/sounds/oxford/apple--_gb_1.mp3" preload="auto"></audio>
+  <script src="abc.js"></script>
+</body>
+</html>

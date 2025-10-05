@@ -1,0 +1,49 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🧠 ABC Quiz Time!</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" href="https://i.ytimg.com/vi/fVquN3HMfNk/maxresdefault.jpg">
+</head>
+<body>
+   <div class="quiz-container">
+    <h1>🧠 ABC Quiz Time!</h1>
+
+    <div id="question-box">
+      <h2 id="question">Loading question...</h2>
+
+      <div id="options">
+        <button onclick="checkAnswer(this)"></button>
+        <button onclick="checkAnswer(this)"></button>
+        <button onclick="checkAnswer(this)"></button>
+        <button onclick="checkAnswer(this)"></button>
+      </div>
+    </div>
+   <div id="navigation">
+    <button onclick="prevQuestion()" id="prev-btn">⬅ Previous</button>
+    <button onclick="nextQuestion()" id="next-btn">Next ➡</button>
+   </div>
+    <div id="score-box">
+        <p>Score: <span id="score">0</span></p>
+      <p>Question <span id="q-number">1</span>/5</p>
+    </div>
+     <div id="result" style="display: none;">
+      <h2>🎉 Quiz Completed!</h2>
+      <p>You scored <span id="final-score"></span> out of 5!</p>
+      <button onclick="restartQuiz()">🔁 Try Again</button>
+      <div id="coin-popup">+4 🪙</div>
+      
+     <div id="trophy" style="display: none;">
+      🏆 Great Job!
+     </div>
+      <button onclick="goToLobby()">🏠 Back to Lobby</button>
+    </div>
+   </div>
+   <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
+   <audio id="wrong-sound" src="wrong.mp3" preload="auto"></audio>
+   <script src="quiz.js"></script>
+</body>
+</html>

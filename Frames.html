@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Rescue Adventure 🐶🐱</title>
+  <link rel="stylesheet" href="Frames.css">
+  <link rel="icon" href="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_AnimalFunForToddlersAndKids_image1600w.jpg">
+
+</head>
+<body>
+  <header>
+    <h1>🐾 Animal Rescue Adventure</h1>
+    <div class="hud">
+      <div id="coins">Coins: <span>0</span> 🪙</div>
+      <div id="badges">Badges: <span id="badgeCount">0</span> 🎖️</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="frame-nav">
+      <button id="prevBtn" disabled>⬅ Prev</button>
+      <div id="frameTitle">Farm</div>
+      <button id="nextBtn">Next ➡</button>
+    </div>
+
+    <div id="gameArea">
+      <div id="animalsArea" class="animals"></div>
+      <div id="homesArea" class="homes"></div>
+      <div id="rewardMsg" class="hidden"></div>
+    </div>
+
+    <div id="controls">
+      <button id="hintBtn">💡 Hint</button>
+      <button id="resetBtn">🔄 Reset</button>
+    </div>
+  </main>
+   <button class="back-btn" onclick="goToLobby()">🏠 Back to Lobby</button>
+
+  <script src="Frames.js"></script>
+</body>
+</html>

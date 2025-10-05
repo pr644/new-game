@@ -1,0 +1,62 @@
+ body {
+  font-family: Arial, sans-serif;
+  background: url("http://s3.amazonaws.com/images.adsttc.com/media/images/5ce6/a982/284d/d175/ab00/0348/large_jpg/Populous_Tottenham_Stadium_London_%C2%A9Hufton_Crow_(9).jpg?1558620465")
+    no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+#status {
+  margin: 15px 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sports-zone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15;
+  margin: 20px 0;
+}
+
+.sportCard {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sportCard:hover {
+  background: #444;
+}
+
+button {
+  background: limegreen;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: green;
+} 
+

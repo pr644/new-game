@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://emojis.wiki/thumbs/emojis/trophy.webp">
+  <title>🏆 Smart KidZ Tournament</title>
+  <link rel="stylesheet" href="tournament.css"> 
+</head>
+<body>
+
+  <div class="tournament-header">
+    <h1>🏆 Smart KidZ Championship</h1>
+    <p>💰 Coins: <span id="coin-count">100</span></p>
+  </div>
+
+  <section class="arena">
+    <div id="round-info">Round 1 / 20</div>
+    <div id="players-arena"></div>
+    <div id="challenge-container"></div>
+  </section>
+
+  <aside id="leaderboard" class="hidden">
+    <h2>🏅 Leaderboard</h2>
+    <ol id="leaderboard-list"></ol>
+  </aside>
+
+  <div class="buttons">
+    <button id="start-tournament-btn">🚀 Start Tournament</button>
+    <button class="back-btn" onclick="window.location.href='index.html'">🔙 Back to Lobby</button>
+  </div>
+
+ 
+  <audio id="coin-sound" src="https://cdn.pixabay.com/download/audio/2023/02/28/audio_f39699d6c4.mp3?filename=coin-collect-146.wav" preload="auto"></audio>
+  <audio id="win-sound" src="https://cdn.pixabay.com/download/audio/2023/03/30/audio_dabaf9e05c.mp3?filename=kids-cheer-145104.mp3" preload="auto"></audio>
+
+  <script src="tournament.js"></script>
+</body>
+</html> 
+ 
+

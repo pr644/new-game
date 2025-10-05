@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="number.css" />
+  <title>🌼 Number Garden</title>
+  <link rel="icon" href="https://www.sharonsable.com/images/1/121/garden-maths-ideas-math-math-numbers-math-activities-9649.jpg">
+</head>
+<body>
+
+  <button id="start-music">🎵 Play Background Music</button>
+<audio id="bg-sound" loop preload="auto">
+  <source src="https://cdn.pixabay.com/audio/2022/05/17/audio_6ae2253875.mp3" type="audio/mpeg">
+</audio>
+
+  <div id="start-screen">
+    <h2>🌻 Welcome to Number Garden!</h2>
+    <button onclick="startGame()">🎮 Start Game</button>
+  </div>
+
+  <div class="number-container" style="display: none;">
+    <h1>🌈 Learn Numbers</h1>
+    <div class="card">
+      <h2 id="number">1</h2>
+      <img id="image" src="images/one.png" alt="One apple" />
+      <p id="word">One Apple</p>
+      <button onclick="playSound()">🔊 Say it</button>
+
+      <div class="navigation">
+        <button onclick="prevNumber()">⬅ Previous</button>
+
+        <button onclick="nextNumber()">Next ➡</button>
+        <button onclick="goToLobby()">🏠 Lobby</button>
+      </div>
+
+      <div id="progress">
+        <progress id="progressBar" value="1" max="5"></progress>
+        <span id="progressText">1/5</span>
+      </div>
+    </div>
+  </div>
+
+ <div id="finish-message" style="display: none;">
+   <h2>🎉 Finished!</h2>
+    <p>Great job! You’ve learned all the numbers!</p>
+
+     <div id="quiz-popup" style="display:none; text-align:center; margin-top: 30px;">
+  <p>Are you ready to start the quiz?</p>
+  <button onclick="goToQuiz()">👉 Start Quiz</button>
+</div>
+    <button onclick="goToLobby()">🏠 Back to Lobby</button>
+ </div>
+
+  <audio id="number-sound" preload="auto"></audio>
+  <script src="number.js"></script>
+</body>
+</html>

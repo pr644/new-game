@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Chef Challenge 🍕👩‍🍳</title> 
+  <link rel="stylesheet" href="mini-chef.css">
+  <link rel="icon" href="https://i.ytimg.com/vi/D55iWkfnFd8/maxresdefault.jpg">
+</head>
+<body>
+
+<header>
+  <h1>🍳 Mini Chef Challenge</h1>
+  <div class="hud">
+    <div>Ingredients Used: <span id="ingredientsUsed">0</span> 🥄</div>
+    <div>Steps Completed: <span id="stepsCompleted">0</span> ✅</div>
+    <div>Level: <span id="level">1</span> 🌟</div>
+  </div>
+</header>
+
+<main>
+  <div class="kitchen">
+    <div class="bowl" id="bowl"></div>
+
+    <div class="ingredients" id="ingredientContainer"></div>
+
+    <button id="stirButton">🌀 Stir</button>
+    <button id="bakeButton">🔥 Bake</button>
+
+    <div class="rewardMsg hidden"></div>
+    <canvas id="confettiCanvas" width="400" height="200"></canvas>
+  </div>
+</main>
+ <button class="back-btn" onclick="goToLobby()">🏠 Back to Lobby</button>
+
+<audio id="dropSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+<audio id="stirSound" src="https://www.fesliyanstudios.com/play-mp3/382"></audio>
+<audio id="bakeSound" src="https://www.fesliyanstudios.com/play-mp3/385"></audio>
+
+<script src="mini-chef.js"></script>
+</body>
+</html>

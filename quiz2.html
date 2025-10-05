@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Shapes & Colors Quiz!</title>
+    <link rel="stylesheet" href="quiz2.css">
+    <link rel="icon" href="http://www.emojisup.org/images/emoji/facebook/15-0/direct-hit.png">
+</head>
+<body>
+
+    <div id="quiz-area">
+        <h2>🎯 Shapes & Colors Quiz!</h2>
+
+
+        <div id="card-container"></div>
+        <button id="start-quiz" style="display:none;" onclick="startQuiz()">🚀 Start Quiz</button>
+
+        <div id="quiz-container" style="display: none;">
+            <h2 id="question">What shape is this?</h2>  
+            <img  id="quiz-image" src="" alt="shape" width="150">
+            <div id="options"></div>
+             <p>Score: <span id="score">0</span> 🪙</p>
+             <button onclick="nextQuiz()">➡ Next</button>
+        </div>
+        </div>
+       
+        <div id="result-area" style="display: none;">
+            <h2>🎉 Well Done!</h2>
+            <p id="final-score"></p>
+            <p id="final-message"></p>
+            
+           <button onclick="location.reload()">🔁 Try Again</button>
+      <a href="index.html"><button>🏠 Back to Lobby</button></a>
+        </div>
+    <script src="quiz2.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body{
+    font-family:  Comic Sans MS, sans-serif;
+    background-color: #ff6b6b;
+    text-align: center;
+    padding: 20px;
+
+}
+.shop-container{
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        display: inline-block;
+
+}
+.coins-display{
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+.stickers{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sticker-item{
+    background-color: #fdf3c4;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    width: 120px;
+}
+.buy-btn{
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buy-btn :hover{
+    background-color: #ff4757;
+
+}
+.collection{
+    margin-top: 15px;
+    min-height: 50px;
+    font-size: 28px;
+}
+.back-btn{
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: #1dd1a1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}

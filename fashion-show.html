@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎗 Fashion Show Game</title>
+<link rel="stylesheet" href="fashion-show.css">
+<link rel="icon" href="https://cdn3.emoji.gg/default/twitter/reminder-ribbon.png">
+</head>
+<body>
+
+<div class="game-header">
+    <h1>👗 Fashion Show Stage</h1>
+    <p>💰 Coins: <span id="coin-count">100</span></p>
+</div>
+
+<div class="game-container">
+
+    <div class="avatar-selection">
+        <h2>Choose Your Model</h2>
+        <button onclick="selectModel('🧒')">🧒 Kid</button>
+        <button onclick="selectModel('👧')">👧 Kid</button>
+        <button onclick="selectModel('🧑')">🧑 Teen</button>
+    </div>
+
+    <div class="wardrobe">
+        <h2>Pick Outfits</h2>
+        <button onclick="addWardrobe('👗')">Dress</button>
+        <button onclick="addWardrobe('👚')">Top</button>
+        <button onclick="addWardrobe('🧢')">Hat</button>
+        <button onclick="addWardrobe('👟')">Shoes</button>
+        <button onclick="addWardrobe('👜')">Bag</button>
+    </div>
+
+    <div class="runway-container">
+        <h2>Runway</h2>
+        <div id="runway" class="runway-stage"></div>
+        <div id="audience" class="audience"></div>
+        <button id="start-show-btn">🎬 Start Fashion Show</button>
+    </div>
+
+</div>
+
+<button class="back-btn" onclick="window.location.href='index.html'">🔙 Back to Lobby</button>
+
+<script src="fashion-show.js"></script>
+</body>
+</html>

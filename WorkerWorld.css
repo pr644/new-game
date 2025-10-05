@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(#a3e3ff, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.game-container {
+  width: 95%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #555;
+}
+
+.city {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.worker {
+  position: relative;
+  width: 120px;
+}
+
+.worker img {
+  width: 100px;
+  animation: float 2s infinite alternate;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+.task {
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  font-size: 24px;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.tool {
+  font-size: 40px;
+  cursor: grab;
+  transition: transform 0.2s;
+}
+
+.tool:active {
+  transform: scale(1.2);
+}
+
+#infoBox {
+  margin-top: 10px;
+}
+
+
+
+#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+}

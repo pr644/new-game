@@ -1,0 +1,134 @@
+ body {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive;
+  background: #000010;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 10px;
+  background: #001f33;
+}
+
+.hud {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.scene {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  margin: 20px auto;
+  border: 2px solid #444;
+  border-radius: 12px;
+  overflow: hidden;
+  background: radial-gradient(circle at top, #001f33, #000);
+}
+
+.hidden { 
+    display: none; 
+}
+
+.astronaut {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/GTYSdDW/astronaut-in-outer-space-against-the-backdrop-of-the-planet-earth-elements-of-this-image-furnished-by-nasa_4jzxnwpkx_thumbnail-1080_01.png') no-repeat center/contain;
+  transform: translateX(-50%);
+  transition: left 0.2s, top 0.2s;
+}
+
+.orb {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url('https://cf.ltkcdn.net/paranormal/images/std/235661-699x450-meaning-blue-orbs.jpg') no-repeat center/contain;
+  cursor: pointer;
+  animation: floatOrb 3s infinite alternate;
+}
+
+@keyframes floatOrb {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-15px); }
+}
+
+.symbol {
+  position: absolute;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+}
+.symbol.correct {
+  animation: glow 0.6s forwards;
+}
+
+
+#controls button {
+  margin: 5px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: none;
+  background: #1f4068;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#controls button:hover {
+  box-shadow: 0 0 15px #00aaff;
+  transform: scale(1.1);
+}
+
+
+.rewardMsg {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  border-radius: 12px;
+  z-index: 10;
+}
+@keyframes floatOrb {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-15px); }
+}
+
+
+.sparkle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url('https://tse4.mm.bing.net/th/id/OIP.qncVoldgs1YvsLFpYlhskQHaEo?pid=Api&P=0&h=180') no-repeat center/contain;
+  pointer-events: none;
+  animation: floatSparkle 1.2s linear forwards;
+  opacity: 0.8;
+}
+
+@keyframes floatSparkle {
+  0% { 
+    transform: scale(0.5); opacity: 1; 
+}
+  100% { 
+    transform: translate(calc(-50px + 100px*var(--randX)), -50px) 
+    scale(1.2); 
+    opacity: 0; }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px #fff; }
+  50% { box-shadow: 0 0 20px #0ff; }
+  100% { box-shadow: 0 0 5px #fff; }
+}

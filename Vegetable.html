@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vegetable Garden — Kids Level</title>
+  <link rel="stylesheet" href="Vegetable.css">
+  <link rel="icon" href="https://www.hippychick.com/wp-content/uploads/2022/05/VIL216139486994.jpg">
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+
+  <header class="topbar">
+    <h1>Vegetable Garden 🌱 — Level: Veggies</h1>
+    <div class="coins-display">Coins: <span id="coinCount">0</span> 🪙</div>
+  </header>
+
+  <main class="stage">
+    <section class="garden card">
+      <div class="controls-wrap">
+        <div class="controls">
+          <button class="btn" id="plantBtn">Plant Seed</button>
+          <button class="btn" id="waterBtn">Water</button>
+          <button class="btn" id="learnBtn">Learning Scene</button>
+          <button class="btn" id="quizBtn">Start Quiz</button>
+        </div>
+
+        <div class="drags" id="dragsArea" aria-hidden="true">
+          <strong>Drag (Quiz)</strong>
+          <div id="dragList"></div>
+        </div>
+      </div>
+
+      <div class="soil" id="soil" aria-label="Garden soil area">
+        <div class="seed" id="seed" title="Tap to plant">•</div>
+
+        <div class="plant" id="plant" style="display:none" aria-live="polite">
+          <span class="veg" id="vegEmoji">🥕</span>
+          <span class="label" id="vegName">Carrot</span>
+        </div>
+      </div>
+
+      <div class="cards" id="cards" aria-hidden="true"></div>
+
+      <div class="quiz" id="quizArea" style="display:none" aria-hidden="true">
+        <div class="drags" id="quizDrags"></div>
+        <div class="baskets" id="baskets"></div>
+      </div>
+
+      <div class="reward" id="reward" style="display:none" aria-hidden="true">
+        <h2>You are a Super Farmer 🌟</h2>
+        <div class="coins-large" id="rewardCoins">+0</div>
+        <div id="hats">Unlockable hats: 👒👑🎩</div>
+      </div>
+    </section>
+  </main>
+   <button class="back-btn" onclick="goToLobby()">🏠 Back to Lobby</button>
+
+  <script src="Vegetable.js"></script>
+</body>
+</html>

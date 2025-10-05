@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🍉 Ultimate Fruit Bounce Castle 🏰</title>
+  <link rel="stylesheet" href="fruit.css">
+  <link rel="icon" href="https://m.media-amazon.com/images/I/91FkDGuRkML.png">
+</head>
+
+<body>
+  <h1>🏰 Ultimate Fruit Bounce Castle 🏰</h1>
+  <p>Tap the bouncing fruits, learn their names, and land them in the correct baskets!</p>
+
+  <div id="castle">
+   
+    <div class="fruit" data-fruit="Apple" data-color="#ff4d4d" data-fact="Helps you see in the dark! 🌙"></div>
+    <div class="fruit" data-fruit="Banana" data-color="#fff94d" data-fact="Full of energy! ⚡">🍌</div>
+    <div class="fruit" data-fruit="Grape" data-color="#b266ff" data-fact="Tiny but full of vitamins! 🍇">🍇</div>
+    <div class="fruit" data-fruit="Orange" data-color="#ff944d" data-fact="Rich in Vitamin C! 🍊">🍊</div>
+    <div class="fruit" data-fruit="Pear" data-color="#99ff66" data-fact="Keeps you healthy! 🍐">🍐</div>
+    <div class="fruit" data-fruit="Watermelon" data-color="#ff6666" data-fact="Juicy and refreshing! 🍉">🍉</div>
+    <div class="fruit" data-fruit="Strawberry" data-color="#ff3366" data-fact="Sweet and small! 🍓">🍓</div>
+    <div class="fruit" data-fruit="Pineapple" data-color="#ffcc33" data-fact="Tropical goodness! 🍍">🍍</div>
+    <div class="fruit" data-fruit="Kiwi" data-color="#66ff66" data-fact="Green inside, tasty! 🥝">🥝</div>
+    <div class="fruit" data-fruit="Cherry" data-color="#ff1a1a" data-fact="Tiny red delight! 🍒">🍒</div>
+    <div class="fruit" data-fruit="Mango" data-color="#ff9933" data-fact="King of fruits! 🥭">🥭</div>
+    <div class="fruit" data-fruit="Blueberry" data-color="#3399ff" data-fact="Small and healthy! 🫐">🫐</div>
+  </div>
+
+  <div id="baskets">
+    
+    <div class="basket" data-color="#ff4d4d">Apple</div>
+    <div class="basket" data-color="#fff94d">Banana</div>
+    <div class="basket" data-color="#b266ff">Grape</div>
+    <div class="basket" data-color="#ff944d">Orange</div>
+    <div class="basket" data-color="#99ff66">Pear</div>
+    <div class="basket" data-color="#ff6666">Watermelon</div>
+    <div class="basket" data-color="#ff3366">Strawberry</div>
+    <div class="basket" data-color="#ffcc33">Pineapple</div>
+    <div class="basket" data-color="#66ff66">Kiwi</div>
+    <div class="basket" data-color="#ff1a1a">Cherry</div>
+    <div class="basket" data-color="#ff9933">Mango</div>
+    <div class="basket" data-color="#3399ff">Blueberry</div>
+  </div>
+
+  <div id="reward" class="hidden">
+    <h2>🎉 Ultimate Castle Complete! 🎉</h2>
+    <!-- <p>All fruits landed + coins & hats collected! 🪙👑✨</p> -->
+    <div class="confetti">🎊🎉✨🪙👑</div>
+    <button onclick="restartGame()">🔄 Play Again</button>
+  </div>
+   <button class="back-btn" onclick="goToLobby()">🏠 Back to Lobby</button>
+
+  <script src="fruit.js"></script>
+</body>
+</html>

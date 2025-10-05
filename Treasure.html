@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treasure Maze Adventure 🏝️🗺️</title>
+<link rel="stylesheet" href="Treasure.css">
+<link rel="icon" href="https://cdn-0001.qstv.on.epicgames.com/rRacTCYCTbnPTEPBWM/image/landscape_comp.jpeg">
+</head>
+<body>
+<h1>Treasure Maze Adventure 🏝️🗺️</h1>
+
+<div id="levelboard"><h2>🌴 Level <span id="level">1</span> 🏝️</h2></div>
+
+<div id="game-container">
+  <canvas id="gameCanvas" width="600" height="600"></canvas>
+</div>
+
+<div id="scoreboard">Score: <span id="score">0</span></div>
+
+<div id="controls">
+  <button onclick="movePlayer(0,-1)">⬆️</button><br>
+  <button onclick="movePlayer(-1,0)">⬅️</button>
+  <button onclick="movePlayer(1,0)">➡️</button><br>
+  <button onclick="movePlayer(0,1)">⬇️</button>
+</div>
+ <button class="back-btn" onclick="goToLobby()">🏠 Back to Lobby</button>
+
+
+<audio id="bgMusic" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+<audio id="collectSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+<audio id="hitSound" src="https://www.fesliyanstudios.com/play-mp3/385"></audio>
+<audio id="moveSound" src="https://www.fesliyanstudios.com/play-mp3/382"></audio>
+
+<script src="Treasure.js"></script>
+</body>
+</html>
