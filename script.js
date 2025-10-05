@@ -82,7 +82,7 @@ function backToLobby() {
 
 
 function openStore() {
-  window.location.href = "store.html"; 
+  window.location.href = "Store.html"; 
 }
 
 function openSpanRole() {
