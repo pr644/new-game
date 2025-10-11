@@ -110,9 +110,10 @@ const levelData = [
   { name: "Learn Flowers", icon: "🌸", link: "flower.html" },
   { name: "Stadium Legends", icon: "⚽", link: "stadium.html" },
   { name: "Magical Tree", icon: "🌲", link: "Tree.html" },
-  { name: "Magic Kitchen", icon: "🍳", link: "kitchen.html" },
+  { name: "Magic Kitchen", icon: "🍳", link: "Kitchen.html" },
+
   { name: "Insect Adventure", icon: "🐞", link: "Insect.html" },
-  { name: "Worker World", icon: "👷", link: "Worker.html" },
+  { name: "Worker World", icon: "👷", link: "worker.html" },
   { name: "Super Vegetables", icon: "🥦", link: "Vegetable.html" },
   { name: "Fruits World", icon: "🍓", link: "fruit.html" },
   { name: "Animal Rescue", icon: "🐶", link: "Frames.html" },
