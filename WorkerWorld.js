@@ -76,7 +76,7 @@ function checkMatch(tool, workerType) {
     score++;
     completedTasks++;
     scoreEl.textContent = `Score: ${score}`;
-    messageEl.textContent = `✅ ${workerType} task completed!`;
+    messageEl.textContent = `🎉 Great job! You helped the ${workerType}!`;
 
     successSound.play();
     actionSound.src = "https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg";
@@ -86,8 +86,15 @@ function checkMatch(tool, workerType) {
     updateProgressBar();
     checkLevelComplete();
   } else {
-    messageEl.textContent = "❌ Try Again!";
+    
+    messageEl.textContent = "🪄 Try another tool!";
+    errorSound.volume = 0.2; 
     errorSound.play();
+
+    
+    const wrongWorker = document.querySelector(`[data-worker='${workerType}']`);
+    wrongWorker.classList.add("shake");
+    setTimeout(() => wrongWorker.classList.remove("shake"), 400);
   }
 }
 
@@ -98,7 +105,7 @@ function updateProgressBar() {
 
 
 function showConfetti() {
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 25; i++) {
     const particle = document.createElement("div");
     particle.classList.add("particle");
     particle.style.background = `hsl(${Math.random() * 360}, 70%, 60%)`;
@@ -126,7 +133,7 @@ function checkLevelComplete() {
     messageEl.textContent = "🏆 Level Complete! You helped all workers!";
     successSound.play();
     showConfetti();
-    setTimeout(() => alert("🎉 Congratulations! Level Complete! 🎉"), 500);
+    setTimeout(() => alert("🎉 Yay! You finished the level! 🎉"), 500);
   }
 }
 
