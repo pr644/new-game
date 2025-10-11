@@ -109,17 +109,17 @@ const levelData = [
   { name: "Bird Paradise", icon: "🐦", link: "bird.html" },
   { name: "Learn Flowers", icon: "🌸", link: "flower.html" },
   { name: "Stadium Legends", icon: "⚽", link: "stadium.html" },
-  { name: "Magical Tree", icon: "🌲", link: "tree.html" },
+  { name: "Magical Tree", icon: "🌲", link: "Tree.html" },
   { name: "Magic Kitchen", icon: "🍳", link: "kitchen.html" },
-  { name: "Insect Adventure", icon: "🐞", link: "insect.html" },
-  { name: "Worker World", icon: "👷", link: "worker.html" },
-  { name: "Super Vegetables", icon: "🥦", link: "vegetable.html" },
+  { name: "Insect Adventure", icon: "🐞", link: "Insect.html" },
+  { name: "Worker World", icon: "👷", link: "Worker.html" },
+  { name: "Super Vegetables", icon: "🥦", link: "Vegetable.html" },
   { name: "Fruits World", icon: "🍓", link: "fruit.html" },
-  { name: "Animal Rescue", icon: "🐶", link: "frames.html" },
+  { name: "Animal Rescue", icon: "🐶", link: "Frames.html" },
   { name: "Time Travel", icon: "⏳", link: "time-travel.html" },
   { name: "Space Rescue", icon: "🛸", link: "space-rescue.html" },
   { name: "Mini Chef", icon: "🍕", link: "mini-chef.html" },
-  { name: "Treasure Maze", icon: "🏝️", link: "treasure.html" }
+  { name: "Treasure Maze", icon: "🏝️", link: "Treasure.html" }
 ];
 
 
